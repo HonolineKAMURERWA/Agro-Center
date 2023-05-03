@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "poppins", sans-serif;
+  /* font-family: "poppins", sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(24, 50, 47, 255);
 }
 .header {
   display: flex;
@@ -16,7 +18,7 @@ body {
   padding: 0 50px;
 }
 .header .logo img {
-  height: 80px;
+  height: 60px;
 }
 .lists {
   display: flex;
@@ -24,6 +26,9 @@ body {
 }
 .lists .sub-list {
   list-style: none;
+}
+.lists .sub-list span i {
+  font-size: 20px;
 }
 .lists .sub-list a {
   text-decoration: none;
@@ -35,7 +40,76 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 570px;
+  height: 600px;
   width: 100%;
-  padding: 150px 0px 50px 100px;
+  padding: 120px 0px 50px 100px;
+  margin-bottom: 40px;
+}
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(116, 144, 117, 255);
+  color: white;
+  font-size: 16px;
+}
+.product-details {
+  background-color: rgba(24, 45, 43, 255);
+  padding: 20px;
+}
+.prod {
+  display: flex;
+}
+.home-products {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  height: 250px;
+  margin: 20px;
+  display: flex;
+}
+.home-products .product-image img {
+  width: 170px;
+  height: 200px;
+}
+.home-products .product-description {
+  padding: 5px 0 0 20px;
+}
+.home-products .product-description h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.home-products .product-description p {
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.home-products .product-description .money {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(116, 144, 117, 255);
+}
+.home-products .product-description button {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0px 65px;
+}
+.home-products .product-description span i {
+  text-align: center;
+  font-size: 40px;
+}
+.product-details .prod-btn {
+  text-align: center;
+
+  margin-left: 600px;
 }
