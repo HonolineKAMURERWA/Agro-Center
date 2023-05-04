@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: rgba(24, 50, 47, 255);
+}
+
+.content {
+  color: white;
+  background-image: url(./images/3.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  padding: 120px 0px 50px 100px;
+  margin-bottom: 40px;
+}
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background: rgba(116, 144, 117, 255);
+  color: white;
+  font-size: 16px;
+}
+.product-details {
+  background-color: rgba(24, 45, 43, 255);
+  padding: 20px;
+}
+.prod {
+  display: flex;
+}
+.home-products {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  height: 250px;
+  margin: 20px;
+  display: flex;
+}
+.home-products .product-image img {
+  width: 170px;
+  height: 200px;
+}
+.home-products .product-description {
+  padding: 5px 0 0 20px;
+}
+.home-products .product-description h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.home-products .product-description p {
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+.home-products .product-description .money {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgba(116, 144, 117, 255);
+}
+.home-products .product-description button {
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 0px 65px;
+}
+.home-products .product-description span i {
+  text-align: center;
+  font-size: 40px;
+}
+.product-details .prod-btn {
+  text-align: center;
+  margin-left: 600px;
+}
+.testmonial-details h1 {
+  text-align: center;
+  margin: 30px 0px;
+  color: rgba(116, 144, 117, 255);
+}
+.testmonial-details .testmonials {
+  background-color: rgba(24, 45, 43, 255);
+  display: flex;
+  gap: 60px;
+  padding: 40px 40px;
+  color: white;
+  width: 400%;
+}
+.container {
+  overflow: hidden;
+}
+.testmonial-details .testmonials .testmonial h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.testmonial-details .testmonials .testmonial p {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.testmonial-details .testmonials .testmonial button span i {
+  background-color: #749075;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+}
+.testmonial-details .testmonials .client-details {
+  display: flex;
+  gap: 20px;
+}
+.testmonials .client-details .one-person {
+  background-color: #749075;
+  border-radius: 5px;
+  padding: 20px;
+  width: 7.5%;
+}
+.testmonial-details .testmonials .client-details .one-person p {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.testmonial-details .testmonials .one-person .client {
+  display: flex;
+  gap: 15px;
+}
+.testmonial-details .testmonials .one-person .client img {
+  border-radius: 50%;
+  height: 100px;
+  object-fit: cover;
+  width: 80px;
+}
+.testmonial-details .testmonials .one-person .client p {
+  margin-top: 35px;
+}
