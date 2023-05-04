@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(24, 50, 47, 255);
+  color: white;
+  font-size: 16px;
+  padding: 0 50px;
+}
+.header .logo img {
+  height: 60px;
+}
+.lists {
+  display: flex;
+  gap: 50px;
+}
+.lists .sub-list {
+  list-style: none;
+}
+.lists .sub-list span i {
+  font-size: 20px;
+}
+.lists .sub-list a {
+  text-decoration: none;
+  color: white;
+}
