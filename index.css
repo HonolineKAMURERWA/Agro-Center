@@ -7,17 +7,50 @@ body {
   font-family: "poppins", sans-serif;
   background-color: rgba(24, 50, 47, 255);
 }
-
-.content {
+.content .intro {
   color: white;
-  background-image: url(./images/3.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  width: 100%;
+  position: absolute;
+  margin-top: -600px;
   padding: 120px 0px 50px 100px;
   margin-bottom: 40px;
+}
+.content .image-content {
+  background-image: url(./images/ground.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+  position: relative;
+  animation: change 30s infinite ease-in-out;
+}
+@keyframes change {
+  0% {
+    background-image: url(./images/ground.jpeg);
+  }
+  20% {
+    background-image: url(./images/seed1.webp);
+  }
+  40% {
+    background-image: url(./images/fertilizers.jpeg);
+  }
+  60% {
+    background-image: url(./images/seed2.webp);
+  }
+  80% {
+    background-image: url(./images/seed1.webp);
+  }
+  100% {
+    background-image: url(./images/3.webp);
+  }
+}
+.background {
+  background: black;
+  opacity: 0.5;
+  top: 67px;
+  position: absolute;
+  height: 590px;
+  width: 100%;
 }
 .content h1 {
   font-size: 60px;
@@ -65,7 +98,6 @@ button {
 }
 .home-products .product-description p {
   margin-bottom: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
 }
 .home-products .product-description .money {
@@ -95,13 +127,14 @@ button {
   background-color: rgba(24, 45, 43, 255);
   display: flex;
   gap: 60px;
-  padding: 40px 40px;
+  padding: 40px 90px;
   color: white;
-  width: 400%;
+  /* width: 400%; */
+  /* overflow: hidden; */
 }
-.container {
+/* .container {
   overflow: hidden;
-}
+} */
 .testmonial-details .testmonials .testmonial h3 {
   font-size: 14px;
   margin-bottom: 20px;
@@ -111,15 +144,21 @@ button {
   font-size: 30px;
   margin-bottom: 40px;
 }
+.testmonial-details .testmonials .testmonial button {
+  padding: 0px;
+}
 .testmonial-details .testmonials .testmonial button span i {
   background-color: #749075;
-  border-radius: 50%;
+  border-radius: 100%;
   padding: 10px;
   font-size: 30px;
 }
-.testmonial-details .testmonials .client-details {
+/* .testmonial-details .testmonials .client-details {
+  background-color: red;
+
   display: flex;
   gap: 20px;
+  overflow: hidden;
 }
 .testmonials .client-details .one-person {
   background-color: #749075;
@@ -144,4 +183,174 @@ button {
 }
 .testmonial-details .testmonials .one-person .client p {
   margin-top: 35px;
+} */
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  gap: 30px;
+}
+.card-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.card {
+  width: 350px;
+  border-radius: 25px;
+  background-color: #749075;
+}
+.slide-content {
+  margin: 0 40px;
+}
+.par-content,
+.card-image {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+}
+.par-content p {
+  font-size: 16px;
+  text-align: center;
+}
+.slide-content {
+  max-width: 1120px;
+  width: 100%;
+  background-color: grey;
+  padding: 40px 0;
+}
+.notification-section {
+  text-align: center;
+}
+.notification-section h1 {
+  text-align: center;
+  margin: 30px 0px;
+  color: rgba(116, 144, 117, 255);
+}
+.notification-section .notification-data {
+  background-color: rgba(24, 45, 43, 255);
+  padding: 40px 0;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+.team-page h1 {
+  text-align: center;
+  margin: 30px 0px;
+  color: rgba(116, 144, 117, 255);
+}
+.team-page {
+  width: 100%;
+  height: 80vh;
+}
+.team-page .team-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 100px;
+}
+.team-page .team-box .profile {
+  color: white;
+  width: 310px;
+  height: 290px;
+  border-radius: 50%;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+  transition: 0.4s;
+}
+.team-page .team-box .profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+.team-page .team-box .profile img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+  z-index: 2;
+  transition: 0.4s;
+}
+.team-page .team-box .profile:hover img {
+  border-radius: 20px;
+  margin-top: -230px;
+}
+.team-page .team-box .profile .team-info {
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  transition: 0.4s;
+}
+.team-page .team-box .profile .team-info .name {
+  margin-bottom: 15px;
+}
+.team-page .team-box .profile .team-info .bio {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto 10px auto;
+}
+.foo {
+  background-color: rgba(24, 45, 43, 255);
+}
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 100px;
+}
+.footer-navs {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+.footer-navs ul li {
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+}
+.footer-navs ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer-navs ul li:hover {
+  color: #749075;
+}
+.footer-nav img {
+  height: 70px;
+}
+.footer-nav .footer-icons {
+  padding-top: 20px;
+}
+.footer-nav .footer-icons span i {
+  font-size: 20px;
+  background-color: #749075;
+  border-radius: 50%;
+  padding: 8px;
+}
+.all-footer {
+  color: white;
+}
+.all-footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #749075;
+}
+.all-footer .allRights {
+  text-align: center;
+  padding: 20px;
 }
