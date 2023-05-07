@@ -3,10 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "poppins", sans-serif;
   background-color: rgba(24, 50, 47, 255);
 }
+
 .content .intro {
   color: white;
   position: absolute;
@@ -14,15 +18,24 @@ body {
   padding: 120px 0px 50px 100px;
   margin-bottom: 40px;
 }
+.background {
+  background: black;
+  opacity: 0.5;
+  top: 67px;
+  position: absolute;
+  height: 593px;
+  width: 100%;
+}
 .content .image-content {
   background-image: url(./images/ground.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 590px;
+  /* height: 590px; */
+  height: 660px;
   object-fit: cover;
   position: relative;
-  animation: change 30s infinite ease-in-out;
+  animation: change 15s infinite ease-in-out;
 }
 @keyframes change {
   0% {
@@ -44,22 +57,33 @@ body {
     background-image: url(./images/3.webp);
   }
 }
-.background {
-  background: black;
-  opacity: 0.5;
-  top: 67px;
-  position: absolute;
-  height: 590px;
-  width: 100%;
+@keyframes slide_Up {
+  0% {
+    transform: translateY(120px);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .content h1 {
   font-size: 60px;
   margin-bottom: 20px;
   font-weight: bold;
+  animation: slide_Up 1.4s ease-in-out;
+}
+.inner {
+  overflow: hidden;
+  /* height: 2000px; */
 }
 .content p {
   font-size: 20px;
   margin-bottom: 20px;
+  animation: slide_Up 2.1s ease-in-out;
+}
+.content button {
+  animation: slide_Up 2.4s ease-in-out;
 }
 button {
   padding: 15px 30px;
@@ -129,12 +153,8 @@ button {
   gap: 60px;
   padding: 40px 90px;
   color: white;
-  /* width: 400%; */
-  /* overflow: hidden; */
 }
-/* .container {
-  overflow: hidden;
-} */
+
 .testmonial-details .testmonials .testmonial h3 {
   font-size: 14px;
   margin-bottom: 20px;
@@ -153,37 +173,6 @@ button {
   padding: 10px;
   font-size: 30px;
 }
-/* .testmonial-details .testmonials .client-details {
-  background-color: red;
-
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
-}
-.testmonials .client-details .one-person {
-  background-color: #749075;
-  border-radius: 5px;
-  padding: 20px;
-  width: 7.5%;
-}
-.testmonial-details .testmonials .client-details .one-person p {
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 30px;
-}
-.testmonial-details .testmonials .one-person .client {
-  display: flex;
-  gap: 15px;
-}
-.testmonial-details .testmonials .one-person .client img {
-  border-radius: 50%;
-  height: 100px;
-  object-fit: cover;
-  width: 80px;
-}
-.testmonial-details .testmonials .one-person .client p {
-  margin-top: 35px;
-} */
 .card-image {
   position: relative;
   height: 150px;
@@ -197,6 +186,10 @@ button {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 .card {
   width: 350px;
@@ -219,7 +212,6 @@ button {
 .slide-content {
   max-width: 1120px;
   width: 100%;
-  background-color: grey;
   padding: 40px 0;
 }
 .notification-section {
@@ -354,3 +346,19 @@ button {
   text-align: center;
   padding: 20px;
 }
+/* .hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-20%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+} */
