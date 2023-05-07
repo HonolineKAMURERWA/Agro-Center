@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="logo"><img src="./images/logo.png" alt="" /></div>
+        <ul class="lists">
+          <li class="sub-list"><a href="index.html">Home</a></li>
+          <li class="sub-list"><a href="about.html">Who we are</a></li>
+          <li class="sub-list"><a href="product.html">Products</a></li>
+          <li class="sub-list"><a href="service.html">Service</a></li>
+          <li class="sub-list"><a href="contact.html">Connect</a></li>
+          <li class="sub-list">
+            <span><i class="bx bx-search" style="color: #ffffff"></i></span>
+          </li>
+          <li class="sub-list">
+            <span><i class="bx bxs-cart-alt" style="color: #ffffff"></i></span>
+          </li>
+          <li class="sub-list">
+            <span><i class="bx bx-menu" style="color: #ffffff"></i></span>
+          </li>
+        </ul>
+      </div>
+      
+    <section>
+        <div class="field">
+            <form method="post">
+                <h3>Get in touch</h3>
+            
+                <input type="text" placeholder="Enter your name" id="name" autocomplete="off">
+          
+                <input type="email" placeholder="Enter your Email" id="email" autocomplete="off">
+            
+           
+                <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+           
+          
+                <textarea id="message" rows="3" placeholder="How can we help you?"></textarea>
+           
+           <button id="btn">submit</button>
+        </form>
+        </div>
+    </section> 
+       
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script src="./js/connect.js">
+  
+    </script>
+    
+</body>
+</html>
