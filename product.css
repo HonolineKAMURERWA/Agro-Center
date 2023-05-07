@@ -15,6 +15,7 @@ body {
 .container{
   width: 1000px;
   margin: auto;
+  margin-top: 80px;
   transition: 0.5s;
 }
 header{

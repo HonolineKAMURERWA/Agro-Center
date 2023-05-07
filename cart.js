@@ -17,7 +17,7 @@ let products = [
     {
         id: 1,
         name: 'NEEM POWDER',
-        image: 'neem-powder.png',
+        image: 'images/1.png',
         price: 30 
     },
     {
