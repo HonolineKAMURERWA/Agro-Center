@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Allerta&family=Bebas+Neue&family=Fasthand&family=Fira+Sans+Extra+Condensed:wght@300;400&family=Merienda:wght@300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
@@ -39,7 +40,7 @@
 
         <h3>Get in touch</h3>
         <p>Fill out the form below, 
-         <br> and  we'll get back to you 
+         and  we'll get back to you 
           as soon as possible.</p>
       </div>
         <div class="field">
@@ -60,35 +61,9 @@
         </div>
     </section> 
        
-    <script src="https://smtpjs.com/v3/smtp.js">
-    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
    
-    <script >
-      var btn = document.getElementById("btn");
-    btn.addEventListener("click", function(e){
-        e.preventDefault()
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var  subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-    
-        var body = 'name: '+ name + '<br/> email: '+ email +' <br/> subject: '+ subject +'<br/> message:'+ message;
-    
-        Email.send({
-    SecureToken : "bfa78cae-38bf-4c61-89b8-d3fd614ab4a4",
-    To : 'benithatuze15@gmail.com',
-    From : "agrocentershop01@gmail.com",
-    Subject : "New inquiry from Agrocenter",
-    Body : body
-    }).then(function() {
-    alert("Message sent successfully");
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
-    document.getElementById("name").focus();
-    });
-    })
+    <script src="js/contact.js">
     </script>
     
 </body>

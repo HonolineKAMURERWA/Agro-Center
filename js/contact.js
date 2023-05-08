@@ -10,7 +10,7 @@ btn.addEventListener("click", function(e){
 
     Email.send({
 SecureToken : "bfa78cae-38bf-4c61-89b8-d3fd614ab4a4",
-To : 'benithatuze15@gmail.com',
+To : 'agrocenter.dealings01@gmail.com',
 From : "agrocentershop01@gmail.com",
 Subject : "New inquiry from Agrocenter",
 Body : body
@@ -22,4 +22,5 @@ document.getElementById("subject").value = "";
 document.getElementById("message").value = "";
 document.getElementById("name").focus();
 });
-})
+});
+  
