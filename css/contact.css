@@ -3,13 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: poppins;
+}
 .section {
     background-color: #18322f;
     display: flex;
     font-family: poppins;
-    gap: 250px;
-    padding-top: 100px;
+    gap: 50px;
+    padding-top: 250px;
     padding-left: 200px;
+    padding-right: 100px;
+  
 }
 .field{
     width: 100%;
@@ -18,7 +23,6 @@
 .ad{
     display: flex;
     justify-content: space-between;
-
 }
 .fill{
     padding-top: 90px;
@@ -45,11 +49,21 @@ form h3{
     font-family: allerta;
     margin-bottom: 5px;
 }
-form input, form textarea{
+form input{
     border: 0;
     margin: 10px 0;
-    padding: 17px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #749075;
+    font-size: 16px;
+    color: white;
+}
+form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
     outline: none;
     background-color: #749075;
     font-size: 16px;

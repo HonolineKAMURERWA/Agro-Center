@@ -1,5 +1,6 @@
 body{
     background-color: #18322f;
+    font-family: poppins;
    
 }
 .accordion{
@@ -35,7 +36,6 @@ background-color: #18322f ;
 .accordion-body{
     padding: 0 10px;
    color: white;
-   font-family: roboto;
    max-height: 0;
    overflow: hidden;
    transition: all 0.3s ease-in-out;
@@ -43,4 +43,28 @@ background-color: #18322f ;
 }
 .accordion-body.active{
     max-height: 300px;
+}
+.par{
+   padding-left: 290px;
+   color: white;
+   margin-bottom: 50px;
+
+   padding-right: 200px;
+}
+.par h1{
+    color: #749075;
+}
+.bottom h2{
+    color: #749075;
+}
+.bottom{
+    background-color:rgba(0, 0, 0, 0.116);
+    width: 78.5%;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 290px;
+    color: white;
+
+
 }
