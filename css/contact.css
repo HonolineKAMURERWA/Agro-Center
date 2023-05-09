@@ -23,7 +23,7 @@ body{
 }
 .ad{
     display: flex;
-   gap: 30px;
+   gap: 20px;
 }
 .fill{
     padding-top: 90px;
