@@ -42,7 +42,11 @@ header .shopping span{
   left: 80%;
   padding: 3px 10px;
 }
-.list{
+header .shopping  i{
+  font-size: 55px;
+
+}
+.list{ 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
