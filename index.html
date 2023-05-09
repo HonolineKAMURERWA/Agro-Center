@@ -17,8 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,800;1,100;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
 
-    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="swiper-bundle.min.css"> -->
   
     <title>Agro-Center</title>
 
@@ -39,23 +42,26 @@
           </li>
           </ul>
         <div id="search"><span>Search <i class="bx bx-search" style="color: #749075"></i></span></div>
-        <div id="menu"><span>Menu <i class="bx bx-menu" style="color: #749075"></i></span></div>
-      </div>
-      <div class="short-menu">
-        <div>
-        <ul>
-          <li class="sub-list"><a href="index.html">Home</a></li>
-          <li class="sub-list"><a href="about.html">Who we are</a></li>
-          <li class="sub-list"><a href="product.html">Products</a></li>
-          <li class="sub-list"><a href="service.html">Service</a></li>
-          <li class="sub-list"><a href="contact.html">Connect</a></li>
-        </ul>
-        </div>
-         <div class="close">
-            <p>Close <span><i class='bx bxs-comment-x' style="color: #749075"></i></span></p>
+        <div><a href="#short-menu" id="menu"><i class="bx bx-menu" style="color: #749075"></i></a>
+          <div class="short-menu" id="short-menu">
+            <div>
+            <ul>
+              <li class="sub-list"><a href="index.html">Home</a></li>
+              <li class="sub-list"><a href="about.html">Who we are</a></li>
+              <li class="sub-list"><a href="product.html">Products</a></li>
+              <li class="sub-list"><a href="service.html">Service</a></li>
+              <li class="sub-list"><a href="contact.html">Connect</a></li>
+            </ul>
+            </div>
+             <div class="close">
+                <p>Close <span><i class="fa-solid fa-xmark" style="color: #749075" id="close"></i></span></p>
+              </div>
           </div>
-         
-      </div>
+             
+          </div>
+        </div>
+       
+    
 
       <div class="content ">
         <div class="inner">
@@ -125,6 +131,7 @@
         </div>
         <button class="prod-btn">Explore Now</button>
       </div>
+
       <div class="testmonial-details hidden">
         <h1>Testmonials</h1>
         <div class="testmonials">
@@ -140,7 +147,7 @@
                 ><i class="bx bx-left-arrow-alt" style="color: #ffffff"></i
               ></span>
             </button>
-            <button id="next-btn">
+            <button id="next-icon">
               <span
                 ><i class="bx bx-right-arrow-alt" style="color: #ffffff"></i
               ></span>
@@ -148,7 +155,7 @@
           </div>
           <div class="slide-container">
             <div class="slide-content">
-              <div class="card-wrapper">
+              <div class="cards-container">
                 <div class="card">
                   <div class="par-content">
                       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -174,68 +181,37 @@
                     <p>Kelly Mons</p>
                   </div>
                 </div>
+
+                <div class="card">
+                  <div class="par-content">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Et eos sunt quisquam labore. Cum optio libero tenetur harum.
+                         molestias neque explicabo praesentium esse poss</p>
+                  </div>
+
+                  <div class="card-image">
+                    <img src="./images/profile.jpeg" alt="">
+                    <p>Kelly Mons</p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="par-content">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Et eos sunt quisquam labore. Cum optio libero tenetur harum.
+                         molestias neque explicabo praesentium esse poss</p>
+                  </div>
+
+                  <div class="card-image">
+                    <img src="./images/profile.jpeg" alt="">
+                    <p>Kelly Mons</p>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
-          <!-- <div class="client-details">
-        <div class="one-person perso">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-
-      <div class="one-person">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-
-      <div class="one-person">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-
-      <div class="one-person">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-
-      <div class="one-person">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-
-      <div class="one-person">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-           Sapiente assumenda perspiciatis</p>
-        <div class="client">
-          <img src="./images/profile.jpeg" alt="">
-          <p>Kelly Mons</p>
-        </div>
-      </div>
-     
-    </div> -->
-    
-        
-      </div>
+         </div>
       </div>
       <div class="notification-section hidden">
         <h1>Notification</h1>
@@ -249,30 +225,30 @@
         <h1>Our Team</h1>
         <div class="team-box">
           <div class="profile">
-            <img src="./images/profile.jpeg" alt="" />
+            <img src="./images/maccu.jpeg" alt="" />
+            <div class="team-info">
+              <h4 class="name">Immaculee</h4>
+              <p class="bio">Member</p>
+            </div>
+          </div>
+          <div class="profile">
+            <img src="./images/img7.jpg" alt="" />
             <div class="team-info">
               <h4 class="name">Happy</h4>
               <p class="bio">Member</p>
             </div>
           </div>
           <div class="profile">
-            <img src="./images/profile.jpeg" alt="" />
+            <img src="./images/hono.jpeg" alt="" />
             <div class="team-info">
-              <h4 class="name">Happy</h4>
+              <h4 class="name">Honolyne</h4>
               <p class="bio">Member</p>
             </div>
           </div>
           <div class="profile">
-            <img src="./images/profile.jpeg" alt="" />
+            <img src="./images/benitha.jpeg" alt="" />
             <div class="team-info">
-              <h4 class="name">Happy</h4>
-              <p class="bio">Member</p>
-            </div>
-          </div>
-          <div class="profile">
-            <img src="./images/profile.jpeg" alt="" />
-            <div class="team-info">
-              <h4 class="name">Happy</h4>
+              <h4 class="name">Benitha</h4>
               <p class="bio">Member</p>
             </div>
           </div>
@@ -302,7 +278,7 @@
             </ul>
             <ul>
               <li><a href="contact.html">Connect</a></li>
-              <li><a href="fqa.html">FAQ</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
         </div>
@@ -311,7 +287,9 @@
       </footer>
     
     </div>
-    <script src="index.js"></script>
+
+    <script defer src="home.js">
+    </script>
   </body>
 </html>
 
