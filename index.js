@@ -1,16 +1,39 @@
-let buttonPrev = document.getElementById("prev-btn");
-let buttonNext = document.getElementById("next-btn");
-let person = document.querySelector(".client-details");
-let personOne = document.querySelector(".perso");
+// let buttonPrev = document.getElementById("prev-btn");
+// let buttonNext = document.getElementById("next-btn");
+// let person = document.querySelector(".card");
+// let personOne = document.querySelector(".card-cont");
 
-buttonNext.addEventListener("click", nextPage);
-function nextPage() {
-  //   person.style.marginLeft = "-205px";
-  personOne.style.marginLeft = "-305px";
-  //   person.innerHTML = "kkkk";
-  console.log("heloooooo");
-}
+// const cardWidth = person[0];
 
+// let currentCard = 0;
+
+// buttonNext.addEventListener("click", () => {
+//   currentCard++;
+//   if (currentCard > person.length - 2) {
+//     currentCard = person.length - 2;
+//   }
+//   const translateX = -currentCard * cardWidth;
+//   personOne.style.transform = `translateX(${translateX}px)`;
+//   console.log("hello");
+// });
+
+//
+const nextIcon = document.querySelector("#next-icon");
+const cardsContainer = document.querySelector(".cards-container");
+const cards = document.querySelectorAll(".card");
+const cardWidth = cards[0].offsetWidth;
+
+let currentCard = 0;
+
+nextIcon.addEventListener("click", () => {
+  currentCard++;
+  if (currentCard > cards.length - 2) {
+    currentCard = cards.length - 2;
+  }
+  const translateX = -currentCard * cardWidth;
+  cardsContainer.style.transform = `translateX(${translateX}px)`;
+});
+// .........
 // const observer = new IntersectionObserver((entries) => {
 //   entries.forEach((entry) => {
 //     console.log(entry);
@@ -29,12 +52,10 @@ const logo = document.querySelector(".logo");
 const search = document.getElementById("search");
 const menu = document.getElementById("menu");
 const ul = document.querySelector(".lists");
-// const log = document.getElementById("logo");
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 200) {
     navbar.classList.add("scrolled");
-    // search.innerHTML = '<i class="bx bx-search" style="color: #ffffff"></i>';
     menu.innerHTML = '<i class="bx bx-menu" style="color: #749075"></i>';
     menu.style.display = "block";
     menu.style.float = "left";
@@ -50,11 +71,12 @@ window.addEventListener("scroll", function () {
     menu.style.display = "none";
     ul.style.display = "flex";
     logo.style.display = "block";
+    newMenu.style.display = "none";
   }
 });
 
 let newMenu = document.querySelector(".short-menu");
 menu.addEventListener("click", function () {
   console.log("hi");
-  // newMenu.style.display = "flex";
+  newMenu.style.display = "flex";
 });
