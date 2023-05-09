@@ -86,11 +86,11 @@ li a{
 .img-3{
     font-size: 150px;
 }
-.paragraphy:hover{
-    margin-left: 20%;
+.paragraphy{
+    margin-left: 130px;
     font-size: 20px;
     color: white;
-    background: #749075;
+    /* background: #749075; */
     box-shadow: #749075;
     height: 200px;
     padding-left: 5%;
