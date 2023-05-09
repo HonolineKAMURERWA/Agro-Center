@@ -1,0 +1,41 @@
+body{
+    background-color: #18322f;
+    color: #749075;
+   font-family: poppins;
+}
+
+.one p{
+    color: white;
+    font-size: 25;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+p{
+    color: white;
+    font-size: 25;
+} 
+
+section{
+    margin: 0 200px 40px 200px;
+}
+.title{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.heading{
+    display: flex;
+    gap: 20px;
+}
+.line{
+    width: 98%;
+    height: 2px;
+    /* padding: 20px 10px; */
+    background-color: #749075;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
