@@ -5,13 +5,14 @@
 }
 body{
     font-family: poppins;
+    background-color: #18322f;
 }
 .section {
     background-color: #18322f;
     display: flex;
     font-family: poppins;
     gap: 50px;
-    padding-top: 250px;
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 100px;
   
@@ -40,7 +41,7 @@ form{
     flex-direction: column;
     padding: 20px 20px;
     max-width: 600px;
-    border: 1px solid rgba(255, 255, 255, 0.404);
+    border: 1px solid #74907580;
     width: 90%;
     border-radius: 10px;
 }
@@ -52,7 +53,7 @@ form h3{
 form input{
     border: 0;
     margin: 10px 0;
-    padding: 15px;
+    padding: 10px 30PX 10PX 10px;
     border-radius: 10px;
     outline: none;
     background-color: #749075;
