@@ -86,46 +86,16 @@ li a{
 .img-3{
     font-size: 150px;
 }
-.paragraphy{
-   @keyframes change {
-    from{
-       
-     transform:translateX(-300px);
-    }
-    to{
-        transform:translateX(0);
-    }
-    
-   }
-    margin-left: 15%;
+.paragraphy:hover{
+    margin-left: 20%;
     font-size: 20px;
     color: white;
-    animation-name:slideInLeft ;
-    animation-duration:5s ;
-    animation-delay:10s ;
-    animation-iteration-count: 1;
-    animation-direction:normal ;
-    animation-fill-mode:backwards ;
-    animation-timing-function:ease-in ;
-    transform: translateX(-150px);
-
-/* 
-
-    color: white;
-    height: 70vh;
-    overflow: hidden;
-    position: relative;
-    background-image: url(We are thrilled to have formed valuable collaborations <br>
-    with organizations that share our passion for agriculture. <br>
-   Our partnerships are built on the belief that by working <br>
-   together, we can achieve more and create a better future <br>
-    for our industry.);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    background-repeat: no-repeat;
-    animation: change 10s infinite ease-in; */
-     
+    background: #749075;
+    box-shadow: #749075;
+    height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
 
 }
 .img{
