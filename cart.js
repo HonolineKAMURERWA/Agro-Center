@@ -17,7 +17,7 @@ let products = [
     {
         id: 1,
         name: 'PRODUCT NAME 1',
-        image: '1.PNG',
+        image: '',
         price: 120000
     },
     {
@@ -60,7 +60,7 @@ function initApp(){
             <img src="image/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Cart</button>`;
+            <button onclick="addToCard(${key})"><i class="bx bxs-cart-alt" style="color: #ffffff"></i></button>`;
         list.appendChild(newDiv);
     })
 }
