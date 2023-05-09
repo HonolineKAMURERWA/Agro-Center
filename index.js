@@ -1,23 +1,3 @@
-// let buttonPrev = document.getElementById("prev-btn");
-// let buttonNext = document.getElementById("next-btn");
-// let person = document.querySelector(".card");
-// let personOne = document.querySelector(".card-cont");
-
-// const cardWidth = person[0];
-
-// let currentCard = 0;
-
-// buttonNext.addEventListener("click", () => {
-//   currentCard++;
-//   if (currentCard > person.length - 2) {
-//     currentCard = person.length - 2;
-//   }
-//   const translateX = -currentCard * cardWidth;
-//   personOne.style.transform = `translateX(${translateX}px)`;
-//   console.log("hello");
-// });
-
-//
 const nextIcon = document.querySelector("#next-icon");
 const cardsContainer = document.querySelector(".cards-container");
 const cards = document.querySelectorAll(".card");
@@ -33,25 +13,29 @@ nextIcon.addEventListener("click", () => {
   const translateX = -currentCard * cardWidth;
   cardsContainer.style.transform = `translateX(${translateX}px)`;
 });
-// .........
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     console.log(entry);
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("show");
-//     } else {
-//       entry.target.classList.remove("show");
-//     }
-//   });
-// });
-// let hiddenElements = document.querySelectorAll(".hidden");
-// hiddenElements.forEach((el) => observer.observe(el));
 
+// .........
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+let hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+
+// scrolling the window
 const navbar = document.querySelector(".header");
 const logo = document.querySelector(".logo");
 const search = document.getElementById("search");
 const menu = document.getElementById("menu");
 const ul = document.querySelector(".lists");
+const close = document.getElementById("close");
+const shortMenu = document.getElementById("short-menu");
 
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 200) {
@@ -73,6 +57,9 @@ window.addEventListener("scroll", function () {
     logo.style.display = "block";
     newMenu.style.display = "none";
   }
+});
+close.addEventListener("click", function () {
+  shortMenu.style.display = "none";
 });
 
 let newMenu = document.querySelector(".short-menu");

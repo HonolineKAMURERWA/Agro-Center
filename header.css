@@ -102,3 +102,9 @@
   margin-top: 20px;
   color: white;
 }
+.close span i {
+  cursor: pointer;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
