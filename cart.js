@@ -47,7 +47,7 @@ let products = [
     {
         id: 6,
         name: 'NEEM POWDER',
-        image: "",
+        image: '1.jpeg',
         price: 120000
     }
 ];
@@ -94,7 +94,7 @@ function reloadCard(){
                 listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText = totalPrice.toLocaleString() ;
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
