@@ -112,8 +112,8 @@ button {
   display: flex;
 }
 .home-products .product-image img {
-  width: 170px;
-  height: 200px;
+  width: 250px;
+  height: 230px;
 }
 .home-products .product-description {
   padding: 5px 0 0 20px;
@@ -291,6 +291,7 @@ button {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  transform: scale(1.05);
   object-position: center;
   border-radius: 50%;
   cursor: pointer;

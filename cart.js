@@ -1,4 +1,5 @@
 let openShopping = document.querySelector('.shopping');
+let cart =document.querySelector('.sub-list');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
 let listCard = document.querySelector('.listCard');
@@ -18,52 +19,56 @@ let products = [
         id: 1,
         name: 'NEEM POWDER',
         image: "",
-        price: 120000
+        price: 30 
     },
     {
         id: 2,
-        name: 'NEEM POWDER',
+        name: 'SEA WEED',
         image: "",
-        price: 120000
+        price: 50
     },
     {
         id: 3,
-        name: 'NEEM POWDER',
+        name: 'NPK fERTILIZERS',
         image: "",
-        price: 120000
+        price: 60
     },
     {
         id: 4,
-        name: 'NEEM POWDER',
+        name: 'UREA',
         image: "",
-        price: 120000
+        price: 90
     },
     {
         id: 5,
-        name: 'NEEM POWDER',
+        name: 'FOLIAR',
         image: "",
-        price: 120000
+        price: 15
     },
     {
         id: 6,
-        name: 'NEEM POWDER',
-        image: '1.jpeg',
-        price: 120000
+        name: 'AMMONIA',
+        image: "images/1.png",
+        price: 12
     }
 ];
+
 let listCards  = [];
 function initApp(){
     products.forEach((value, key) =>{
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="image/${value.image}">
+            <img src="images/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})"><i class="bx bxs-cart-alt" style="color: #ffffff"></i></button>`;
+
         list.appendChild(newDiv);
+        
     })
 }
+
 initApp();
 function addToCard(key){
     if(listCards[key] == null){
@@ -106,3 +111,14 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }

@@ -31,7 +31,7 @@ header .shopping img{
   width: 40px;
 }
 header .shopping span{
-  background: red;
+  background:#759074;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -141,4 +141,7 @@ header .shopping  i{
 }
 .listCard .count{
   margin: 0 10px;
+}
+header h1{
+  color: #759074;
 }
