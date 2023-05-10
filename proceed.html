@@ -30,19 +30,30 @@
           </li>
         </ul>
       </div>
+  <div class="container">
     <h1>checkout</h1>
     <div class="address">
         <h2>delivery address</h2>
-        <input type="">
+        <button class="dropbtn" onclick="myFunction()"><i class='bx bx-chevron-down'></i></button>
     </div>
+    <div class="dropdown-content" id="myDropdown">
+        <a href="#">kigali</a>
+        <a href="#">North</a>
+        <a href="#">South</a>
+        <a href="#">West</a>
+        <a href="#">East</a>
+      </div>
+
     <div class="email">
+        <h2>email address</h2>
         <input type="text">
         <button>add my email</button>
     </div>
-    <p>payment</p>
-
-    <button type="button">place your order</button>
-    <p>By placing your order you agree to our terms & conditions, privacy and returns policies.</p>
+    <div class="payment">payment <i class='bx bx-chevron-down'></i></div>
+    <button class="btn" type="button">place your order</button>
+    <p>By placing your order you agree to our terms & conditions,</p>
+        <p>privacy and returns policies.</p>
+</div>
     <footer>
         <div class="all-footer">
           <div class="foo">
@@ -74,5 +85,6 @@
         <div class="allRights">@2023 Agro_center | All Rights Reserved</div>
       </div>
             </footer>
+      <script src="cart.js"></script>
 </body>
 </html>
