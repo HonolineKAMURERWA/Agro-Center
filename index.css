@@ -112,8 +112,8 @@ button {
   display: flex;
 }
 .home-products .product-image img {
-  width: 250px;
-  height: 230px;
+  width: 150px;
+  height: 200px;
 }
 .home-products .product-description {
   padding: 5px 0 0 20px;
@@ -137,6 +137,10 @@ button {
   margin-top: 20px;
   padding: 0px 65px;
 }
+.product-details button a {
+  color: white;
+  text-decoration: none;
+}
 .home-products .product-description span i {
   text-align: center;
   font-size: 40px;
@@ -157,7 +161,9 @@ button {
   padding: 40px 90px;
   color: white;
 }
-
+.testmonial-details .testmonials .testmonial {
+  width: 30%;
+}
 .testmonial-details .testmonials .testmonial h3 {
   font-size: 14px;
   margin-bottom: 20px;
@@ -178,8 +184,8 @@ button {
 }
 .card-image {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 200px;
   border-radius: 50%;
   display: flex;
   gap: 30px;
@@ -208,7 +214,7 @@ button {
 }
 .card {
   /* flex: 0 0 calc(95% / 2); */
-  width: 420px;
+  width: 400px;
   border-radius: 25px;
   background-color: #749075;
   box-sizing: border-box;

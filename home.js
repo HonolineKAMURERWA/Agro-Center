@@ -1,4 +1,5 @@
 const nextIcon = document.querySelector("#next-icon");
+const preIcon = document.querySelector("#prev-btn");
 const cardsContainer = document.querySelector(".cards-container");
 const cards = document.querySelectorAll(".card");
 const cardWidth = cards[0].offsetWidth;
@@ -9,6 +10,15 @@ nextIcon.addEventListener("click", () => {
   currentCard++;
   if (currentCard > cards.length - 2) {
     currentCard = cards.length - 2;
+  }
+  const translateX = -currentCard * cardWidth;
+  cardsContainer.style.transform = `translateX(${translateX}px)`;
+});
+
+preIcon.addEventListener("click", () => {
+  currentCard--;
+  if (currentCard < 0) {
+    currentCard = 0;
   }
   const translateX = -currentCard * cardWidth;
   cardsContainer.style.transform = `translateX(${translateX}px)`;
